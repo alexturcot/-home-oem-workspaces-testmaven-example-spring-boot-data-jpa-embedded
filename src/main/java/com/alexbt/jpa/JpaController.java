@@ -20,7 +20,7 @@ public class JpaController {
 		return modelJpaRepository.findAll();
 	}
 	
-	@RequestMapping(value = "/repo/{value}", method = RequestMethod.GET)
+	@RequestMapping(value = "/repo/{value}", method = RequestMethod.POST)
 	public void saveByRepo(@PathVariable String value) {
 		Model model = new Model();
 		model.setId(System.currentTimeMillis());
